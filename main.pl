@@ -1,3 +1,3 @@
 use strict;
 use warnings;
-# print ...
+print "Hello, Perl!\n";
