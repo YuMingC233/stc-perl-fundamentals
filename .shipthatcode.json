@@ -1,0 +1,42 @@
+{
+  "course": "perl-fundamentals",
+  "language": "perl",
+  "language_id": 85,
+  "entrypoint": "main.pl",
+  "version": 1,
+  "content_hash": "3746bb7ede4ecedc",
+  "lessons": [
+    {
+      "slug": "hello-perl",
+      "tests_hash": "2ff1c0d8f717"
+    },
+    {
+      "slug": "variables",
+      "tests_hash": "825d6c6cb914"
+    },
+    {
+      "slug": "arrays",
+      "tests_hash": "c14198f9d053"
+    },
+    {
+      "slug": "hashes",
+      "tests_hash": "cbe6c1fdb32b"
+    },
+    {
+      "slug": "regex-match",
+      "tests_hash": "8e5336f7f5b1"
+    },
+    {
+      "slug": "control-flow",
+      "tests_hash": "c7befdbc9746"
+    },
+    {
+      "slug": "subroutines",
+      "tests_hash": "c7dde66eca99"
+    },
+    {
+      "slug": "strings",
+      "tests_hash": "4ab5c7f5780f"
+    }
+  ]
+}
