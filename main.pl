@@ -45,5 +45,5 @@ if ($score >= 90) {
 } elsif ($score >= 60 && $score <= 69) {
     print "D";
 } elsif ($score < 60) {
-    print "E";
+    print "F";
 }
