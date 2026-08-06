@@ -30,7 +30,7 @@ my @numbers = ($line =~ /\d+/g);
 for (my $i = 0; $i < @numbers; $i++) {
     if ($i == @numbers - 1) {
         print "$numbers[$i]";
-        return;
+    } else {
+        print "$numbers[$i] ";
     }
-    print "$numbers[$i] ";
 }
