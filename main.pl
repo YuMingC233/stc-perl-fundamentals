@@ -35,15 +35,23 @@ use warnings;
 #     }
 # }
 
-chomp(my $score = <STDIN>);
-if ($score >= 90) {
-    print "A";
-} elsif ($score >= 80 && $score <= 89) {
-    print "B";
-} elsif ($score >= 70 && $score <= 79) {
-    print "C";
-} elsif ($score >= 60 && $score <= 69) {
-    print "D";
-} elsif ($score < 60) {
-    print "F";
+# chomp(my $score = <STDIN>);
+# if ($score >= 90) {
+#     print "A";
+# } elsif ($score >= 80 && $score <= 89) {
+#     print "B";
+# } elsif ($score >= 70 && $score <= 79) {
+#     print "C";
+# } elsif ($score >= 60 && $score <= 69) {
+#     print "D";
+# } elsif ($score < 60) {
+#     print "F";
+# }
+
+sub factorial {
+    my ($n) = @_;
+    return $n <= 1 ? 1 : $n * factorial($n-1);
 }
+
+chomp(my $n = <STDIN>);
+print factorial($n), "\n";
