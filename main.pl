@@ -25,12 +25,25 @@ use warnings;
 #     print "$val: $counts{$val}\n";
 # }
 
-my $line =  <STDIN>; chomp $line;
-my @numbers = ($line =~ /\d+/g);
-for (my $i = 0; $i < @numbers; $i++) {
-    if ($i == @numbers - 1) {
-        print "$numbers[$i]";
-    } else {
-        print "$numbers[$i] ";
-    }
+# my $line =  <STDIN>; chomp $line;
+# my @numbers = ($line =~ /\d+/g);
+# for (my $i = 0; $i < @numbers; $i++) {
+#     if ($i == @numbers - 1) {
+#         print "$numbers[$i]";
+#     } else {
+#         print "$numbers[$i] ";
+#     }
+# }
+
+chomp(my $score = <STDIN>);
+if ($score >= 90) {
+    print "A";
+} elsif ($score >= 80 && $score <= 89) {
+    print "B";
+} elsif ($score >= 70 && $score <= 79) {
+    print "C";
+} elsif ($score >= 60 && $score <= 69) {
+    print "D";
+} elsif ($score < 60) {
+    print "E";
 }
