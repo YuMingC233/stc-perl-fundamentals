@@ -1,3 +1,8 @@
 use strict;
 use warnings;
-print "Hello, Perl!\n";
+
+my $a = <STDIN>; chomp $a;
+my $b = <STDIN>; chomp $b;
+
+print $a + $b;
+
