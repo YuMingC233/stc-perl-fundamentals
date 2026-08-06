@@ -6,14 +6,21 @@ use warnings;
 
 # print $a + $b;
 
-my $n = <STDIN>; chomp $n;
-my @nums;
-for (1..$n) {
-    my $x = <STDIN>; chomp $n;
-    push @nums, $x;
+# my $n = <STDIN>; chomp $n;
+# my @nums;
+# for (1..$n) {
+#     my $x = <STDIN>; chomp $n;
+#     push @nums, $x;
+# }
+# my $sum;
+# for (my $i = 0; $i < scalar(@nums); $i++) {
+#     $sum += $nums[$i];
+# }
+# print($sum)
+
+my $line = <STDIN>; chomp $line;
+my %counts;
+$counts{$_}++ for split /\s+/, $line;
+for my $val (sort keys %counts) {
+    print "$val: $counts{$val}\n";
 }
-my $sum;
-for (my $i = 0; $i < scalar(@nums); $i++) {
-    $sum += $nums[$i];
-}
-print($sum)
