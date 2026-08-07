@@ -48,10 +48,17 @@ use warnings;
 #     print "F";
 # }
 
-sub factorial {
-    my ($n) = @_;
-    return $n <= 1 ? 1 : $n * factorial($n-1);
-}
+# sub factorial {
+#     my ($n) = @_;
+#     return $n <= 1 ? 1 : $n * factorial($n-1);
+# }
 
-chomp(my $n = <STDIN>);
-print factorial($n), "\n";
+# chomp(my $n = <STDIN>);
+# print factorial($n), "\n";
+
+
+chomp(my $line = <STDIN>);
+my @words = split / /, $line;
+my @capitalized = map { ucfirst($_) } @words;
+
+print join(' ', @capitalized), "\n";
